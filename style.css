@@ -4,9 +4,12 @@
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+.header {
+    position: relative;
+}
+
 .header-container {
     width: 940px;
-    height: auto;
     margin: auto;
 }
 
@@ -75,4 +78,95 @@
 .header-contacts-call:hover {
     background-color: #000;
     color: #fff;
+}
+
+
+.header-nav {
+    height: 60px;
+    background-color: yellow;
+}
+
+.header-nav-container {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav-container a {
+    font-style: 14px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, .8);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom .15s ease-in-out;
+}
+
+.header-nav-container a:hover {
+    border-bottom: 1px solid #000;
+}
+
+
+.header-second {
+    height: 520px;
+    display: flex;
+    align-items: center;
+}
+
+.header-second-container {
+    width: 410px;
+}
+
+.header-second-text-top {
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+
+.header-second-text-bot {
+    font-size: 14px;
+    line-height: 22px;
+    color: #000;
+    margin-bottom: 4em;
+}
+
+.header-second-btns {
+    width: 380px;
+    display: flex;
+    align-items: center;
+}
+
+.header-second-btn-left {
+    min-width: 200px;
+    height: 50px;
+    margin-right: 1.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+}
+
+.header-second-btn-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header-second-btn-right p {
+    font-size: 14px;
+    color: #000;
+}
+
+.header-second-btn-right a {
+    font-size: 14px;
+    color: #000;
 }
